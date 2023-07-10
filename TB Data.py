@@ -15,3 +15,6 @@ type(country_cfr_dataframe['cfr'][0])
 # drop each data that has "NaN" as part of the cfr column using dropna() function
 country_cfr_dataframe.dropna(subset = ['cfr'], inplace = True)
 print(country_cfr_dataframe)
+
+# plot country vs cfr using matplotlib
+import matplotlib as mpl
