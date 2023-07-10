@@ -17,4 +17,12 @@ country_cfr_dataframe.dropna(subset = ['cfr'], inplace = True)
 print(country_cfr_dataframe)
 
 # plot country vs cfr using matplotlib
-import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+import numpy as np
+import matplotlib.pyplot as plt
+  
+fig = plt.figure(figsize = (20, 10))
+
+plt.bar(country_cfr_dataframe['iso3'], country_cfr_dataframe['cfr'], color = "blue")
+plt.show()
